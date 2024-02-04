@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>D Cars</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>D CARS</h1>
+            <div class="cart-icon" onclick="toggleCart()">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhGOCq6gt6uos50kp0yMvBlUN4vN6gSXDZKDgbTM7pbg&s" alt="Cart Icon">
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container product-container">
+        <div class="products">
+            <!-- Product 1 - BMW -->
+            <div class="product" onclick="addToCart('BMW', 'Luxury car brand', 49999.99)">
+                <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=400" alt="BMW">
+                <h2>BMW</h2>
+                <p>Luxury car brand</p>
+                <p class="price">₹37,49,992.26</p>
+            </div>
+
+            <!-- Product 2 - Lamborghini -->
+            <div class="product" onclick="addToCart('Lamborghini', 'Exotic sports car brand', 299999.99)">
+                <img src="https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?auto=compress&cs=tinysrgb&w=400" alt="Lamborghini">
+                <h2>Lamborghini</h2>
+                <p>Exotic sports car brand</p>
+                <p class="price">₹2,24,99,992.61</p>
+            </div>
+
+            <!-- Product 3 - Tesla -->
+            <div class="product" onclick="addToCart('Tesla', 'Electric car manufacturer', 59999.99)">
+                <img src="https://images.pexels.com/photos/12122691/pexels-photo-12122691.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tesla">
+                <h2>Tesla</h2>
+                <p>Electric car manufacturer</p>
+                <p class="price">₹44,99,992.74</p>
+            </div>
+
+            <!-- Repeat the above product block for Product 4 to Product 10 -->
+            <!-- Product 4 - Mercedes-Benz -->
+            <div class="product" onclick="addToCart('Mercedes-Benz', 'Luxury car brand', 69999.99)">
+                <img src="https://images.pexels.com/photos/1429775/pexels-photo-1429775.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mercedes-Benz">
+                <h2>Mercedes-Benz</h2>
+                <p>Luxury car brand</p>
+                <p class="price">₹52,49,993.24</p>
+            </div>
+
+            <!-- Product 5 - Ferrari -->
+            <div class="product" onclick="addToCart('Ferrari', 'Italian sports car manufacturer', 399999.99)">
+                <img src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ferrari">
+                <h2>Ferrari</h2>
+                <p>Italian sports car manufacturer</p>
+                <p class="price">₹2,99,99,993.61</p>
+            </div>
+
+            <!-- Product 6 - Audi -->
+            <div class="product" onclick="addToCart('Audi', 'German luxury car manufacturer', 54999.99)">
+                <img src="https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Audi">
+                <h2>Audi</h2>
+                <p>German luxury car manufacturer</p>
+                <p class="price">₹41,24,992.76</p>
+            </div>
+
+            <!-- Product 7 - Jaguar -->
+            <div class="product" onclick="addToCart('Jaguar', 'British luxury car brand', 64999.99)">
+                <img src="https://images.pexels.com/photos/93652/pexels-photo-93652.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Jaguar">
+                <h2>Jaguar</h2>
+                <p>British luxury car brand</p>
+                <p class="price">₹48,74,993.24</p>
+            </div>
+
+            <!-- Product 8 - Porsche -->
+            <div class="product" onclick="addToCart('Porsche', 'German sports car manufacturer', 79999.99)">
+                <img src="https://images.pexels.com/photos/19302258/pexels-photo-19302258/free-photo-of-porsche.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Porsche">
+                <h2>Porsche</h2>
+                <p>German sports car manufacturer</p>
+                <p class="price">₹59,99,993.24</p>
+            </div>
+
+            <!-- Product 9 - Volvo -->
+            <div class="product" onclick="addToCart('Volvo', 'Swedish luxury car brand', 44999.99)">
+                <img src="https://images.pexels.com/photos/6740129/pexels-photo-6740129.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Volvo">
+                <h2>Volvo</h2>
+                <p>Swedish luxury car brand</p>
+                <p class="price">₹33,74,992.76</p>
+            </div>
+
+            <!-- Product 10 - Rolls-Royce -->
+            <div class="product" onclick="addToCart('Rolls-Royce', 'British luxury car manufacturer', 99999.99)">
+                <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rolls-Royce">
+                <h2>Rolls-Royce</h2>
+                <p>British luxury car manufacturer</p>
+                <p class="price">₹74,99,993.24</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cart" id="cart">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <div id="total">Total: ₹0.00</div>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
